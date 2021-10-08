@@ -37,6 +37,7 @@ namespace GeneralStore.MVC.Controllers
 
         // POST: Transaction/Create
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(CreateTransactionViewModel viewModel)
         {
             return View(viewModel);

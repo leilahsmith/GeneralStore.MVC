@@ -39,7 +39,7 @@ namespace GeneralStore.MVC.Controllers
                 return RedirectToAction("Index");
             }
 
-            return View(product);
+            return View(product); 
         }
 
         // GET: Delete

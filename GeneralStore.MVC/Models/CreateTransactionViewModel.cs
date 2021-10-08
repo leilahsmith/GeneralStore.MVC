@@ -13,7 +13,7 @@ namespace GeneralStore.MVC.Models
         public int ProductId { get; set; }
         [Required]
         public int CustomerId { get; set; }
-        public IEnumerable<SelectListItem> Customers { get; set; }
-        public IEnumerable<SelectListItem> Products { get; set; }
+        public IEnumerable<SelectListItem> Customers { get; set; } = new List<SelectListItem>();
+        public IEnumerable<SelectListItem> Products { get; set; } = new List<SelectListItem>();
     }
 }

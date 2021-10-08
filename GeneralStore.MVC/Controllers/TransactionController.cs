@@ -36,9 +36,10 @@ namespace GeneralStore.MVC.Controllers
         }
 
         // POST: Transaction/Create
-        public ActionResult Create()
+        [HttpPost]
+        public ActionResult Create(CreateTransactionViewModel viewModel)
         {
-           
+            return View(viewModel);
         }
     }
 }
